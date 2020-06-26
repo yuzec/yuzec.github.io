@@ -1,4 +1,4 @@
-[Hux Blog](https://huangxuan.me)
+[Yuzec Blog](https://yuzec.github.io)
 ================================
 
 > I never expected this becomes popular.
