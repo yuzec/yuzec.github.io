@@ -67,7 +67,7 @@ torch.manual_seed(manualSeed)
 
 输出：
 
-```
+```text
 Random Seed:  999
 ```
 
@@ -142,7 +142,7 @@ ngpu = 1
 
 ​		在本教程中，我们将使用Celeb-A Faces数据集，该数据集可以在链接的网站或Google云端硬盘中下载。 数据集将下载为名为img_align_celeba.zip的文件。 下载后，创建一个名为celeba的目录，并将zip文件解压缩到该目录中。 然后，将此笔记本的dataroot输入设置为刚创建的celeba目录。 结果目录结构应为：
 
-```
+```text
 /path/to/celeba
     -> img_align_celeba
         -> 188242.jpg
@@ -262,7 +262,7 @@ print(netG)
 
 输出：
 
-```
+```text
 Generator(
   (main): Sequential(
     (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1), bias=False)
@@ -339,7 +339,7 @@ print(netD)
 
 输出：
 
-```
+```text
 Discriminator(
   (main): Sequential(
     (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
@@ -494,7 +494,7 @@ for epoch in range(num_epochs):
 
 输出：
 
-```
+```text
 Starting Training Loop...
 [0/5][0/1583]   Loss_D: 2.0937  Loss_G: 5.2060  D(x): 0.5704    D(G(z)): 0.6680 / 0.0090
 [0/5][50/1583]  Loss_D: 2.0243  Loss_G: 29.0899 D(x): 0.9875    D(G(z)): 0.8004 / 0.0000
