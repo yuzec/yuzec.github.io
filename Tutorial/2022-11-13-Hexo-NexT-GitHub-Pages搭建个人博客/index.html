@@ -25,12 +25,12 @@
   <meta name="description" content="安装Hexo1$ npm install -g hexo-cli  创建Hexo项目123$ hexo init my-blog$ cd my-blog$ npm install">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+NexT+GitHub Pages搭建个人博客">
-<meta property="og:url" content="https://yuzec.github.io/2022/11/13/Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:url" content="https://yuzec.github.io/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Yuzec&#39;s blog">
 <meta property="og:description" content="安装Hexo1$ npm install -g hexo-cli  创建Hexo项目123$ hexo init my-blog$ cd my-blog$ npm install">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-13T11:30:54.000Z">
-<meta property="article:modified_time" content="2022-11-13T14:57:40.915Z">
+<meta property="article:modified_time" content="2022-11-15T15:10:31.008Z">
 <meta property="article:author" content="Zecong Yu">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="NexT">
@@ -38,7 +38,7 @@
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yuzec.github.io/2022/11/13/Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="https://yuzec.github.io/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
 
 <script id="page-configurations">
@@ -141,7 +141,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuzec.github.io/2022/11/13/Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="https://yuzec.github.io/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -229,9 +229,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-11-13 19:30:54 / 修改时间：22:57:40" itemprop="dateCreated datePublished" datetime="2022-11-13T19:30:54+08:00">2022-11-13</time>
+              <time title="创建时间：2022-11-13 19:30:54" itemprop="dateCreated datePublished" datetime="2022-11-13T19:30:54+08:00">2022-11-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-11-15 23:10:31" itemprop="dateModified" datetime="2022-11-15T23:10:31+08:00">2022-11-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tutorial/" itemprop="url" rel="index"><span itemprop="name">Tutorial</span></a>
+                </span>
             </span>
 
           
@@ -278,9 +293,9 @@
 <p>然后修改<code>my-blog/_config.yml</code>中的</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
 <p>即可切换为NexT主题。</p>
-<h3 id="修改Hexo配置"><a href="#修改Hexo配置" class="headerlink" title="修改Hexo配置"></a>修改Hexo配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># my-blog/_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">Yuzec&#x27;s</span> <span class="string">blog</span>           <span class="comment"># 网站的标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">博观约取，厚积薄发。</span>   <span class="comment"># 网站的副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">Yuzec的个人博客</span>   <span class="comment"># 网站的描述，主要用于SEO，使得搜索引擎更容易检索</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,Python,Ubuntu</span>  <span class="comment"># 网站的关键词，可以为多个</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Yuzec</span>     <span class="comment"># 作者名称，用于显示文章的作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>   <span class="comment"># 网站使用的语言(NexT主题不能用zh-Hans)</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span> <span class="comment"># 时区</span></span><br><span class="line"></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://yuzec.github.io</span> <span class="comment"># 网站的地址</span></span><br></pre></td></tr></table></figure>
+<h3 id="修改Hexo配置"><a href="#修改Hexo配置" class="headerlink" title="修改Hexo配置"></a>修改Hexo配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># my-blog/_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">Yuzec&#x27;s</span> <span class="string">blog</span>           <span class="comment"># 网站的标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">博观约取，厚积薄发。</span>   <span class="comment"># 网站的副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">Yuzec的个人博客</span>   <span class="comment"># 网站的描述，主要用于SEO，使得搜索引擎更容易检索</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">前端,Python,Ubuntu</span>  <span class="comment"># 网站的关键词，可以为多个</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Yuzec</span>     <span class="comment"># 作者名称，用于显示文章的作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>   <span class="comment"># 网站使用的语言(NexT主题不能用zh-Hans)</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span> <span class="comment"># 时区</span></span><br><span class="line"></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://yuzec.github.io</span> <span class="comment"># 网站的地址</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:category/:year-:month-:day-:title/</span>  <span class="comment"># 修改文章链接的格式</span></span><br></pre></td></tr></table></figure>
 <p>这里有个小坑，打开<code>my-blog/themes/next/languages</code>文件夹可以看到，NexT主题下只有<code>zh-CN.yml</code>而没有<code>zh-Hans.yml</code>，因此在设置<code>language</code>时只能设置为<code>zh-CN</code>而不能是<code>zh-Hans</code>。</p>
-<h3 id="修改NexT配置"><a href="#修改NexT配置" class="headerlink" title="修改NexT配置"></a>修改NexT配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># my-blog/themes/next/_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">schemes:</span> <span class="string">Pisces</span> <span class="comment"># 一共有Muse、Mist、Pisces、Gemini四种风格的主题</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span>       <span class="comment"># 主页</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span>  <span class="comment"># 标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span>  <span class="comment"># 分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span> <span class="comment"># 归档</span></span><br><span class="line"></span><br><span class="line"><span class="attr">favicon:</span>  <span class="comment"># 网站标签页图标</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span><br><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line"></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.gif</span> <span class="comment"># 头像</span></span><br><span class="line">  <span class="attr">rounded:</span> <span class="literal">true</span>   <span class="comment"># 是否为圆角</span></span><br><span class="line">  <span class="attr">rotated:</span> <span class="literal">false</span>  <span class="comment"># 鼠标移上是否旋转</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social:</span>   <span class="comment"># 社交账号</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/yuzec</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:yuzec@163.com</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br><span class="line"></span><br><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span> <span class="comment"># 开启滑动百分比</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reading_progress:</span> <span class="comment"># 开启阅读进度条</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#bfa&quot;</span></span><br><span class="line">  <span class="attr">height:</span> <span class="string">3px</span></span><br><span class="line"></span><br><span class="line"><span class="attr">github_banner:</span>  <span class="comment"># 开启页面右上角的GitHub三角形图标</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/yuzec</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
+<h3 id="修改NexT配置"><a href="#修改NexT配置" class="headerlink" title="修改NexT配置"></a>修改NexT配置</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># my-blog/themes/next/_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">favicon:</span>  <span class="comment"># 网站标签页图标</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-next.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-next.png</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon-next.png</span></span><br><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line"></span><br><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">powered:</span> <span class="literal">false</span>  <span class="comment"># 去除页脚的Hexo &amp; NexT链接</span></span><br><span class="line"></span><br><span class="line"><span class="attr">creative_commons:</span> <span class="comment"># 开启版权信息声明</span></span><br><span class="line">  <span class="attr">license:</span> <span class="string">by-nc-sa</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span>   <span class="comment"># 侧边栏中的版权标识</span></span><br><span class="line">  <span class="attr">post:</span> <span class="literal">true</span>      <span class="comment"># 文章下方的版权信息</span></span><br><span class="line">  <span class="attr">language:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">schemes:</span> <span class="string">Pisces</span> <span class="comment"># 一共有Muse、Mist、Pisces、Gemini四种风格的主题</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span>       <span class="comment"># 主页</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span>  <span class="comment"># 标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span>  <span class="comment"># 分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span> <span class="comment"># 归档</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span>   <span class="comment"># 开启菜单图标</span></span><br><span class="line">  <span class="attr">badges:</span> <span class="literal">true</span>  <span class="comment"># 显示标签、分类、归档的数量</span></span><br><span class="line"></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.gif</span> <span class="comment"># 头像</span></span><br><span class="line">  <span class="attr">rounded:</span> <span class="literal">true</span>   <span class="comment"># 是否为圆角</span></span><br><span class="line">  <span class="attr">rotated:</span> <span class="literal">false</span>  <span class="comment"># 鼠标移上是否旋转</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social:</span>   <span class="comment"># 社交账号</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/yuzec</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:yuzec@163.com</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br><span class="line"></span><br><span class="line"><span class="attr">links_settings:</span> <span class="comment"># 友情链接</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-link</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">友情链接</span></span><br><span class="line">  <span class="attr">layout:</span> <span class="string">inline</span>  <span class="comment"># 链接排列方式，有block和inline两种形式</span></span><br><span class="line"></span><br><span class="line"><span class="attr">links:</span>  <span class="comment"># 添加多个友情链接</span></span><br><span class="line">  <span class="attr">Hexo:</span> <span class="string">https://hexo.io/zh-cn/</span></span><br><span class="line">  <span class="attr">NexT:</span> <span class="string">https://theme-next.js.org/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span>  <span class="comment"># 文章底部的标签：用图标替代#号进行显示</span></span><br><span class="line"></span><br><span class="line"><span class="attr">codeblock:</span>  <span class="comment"># 代码块</span></span><br><span class="line">  <span class="comment"># 代码块的主题: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span><br><span class="line">  <span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span>      <span class="comment"># 开启复制按钮</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span> <span class="comment"># 开启复制成功的样式</span></span><br><span class="line">    <span class="attr">style:</span> <span class="string">default</span>    <span class="comment"># 有3种主题: default | flat | mac</span></span><br><span class="line"></span><br><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span> <span class="comment"># 开启滑动百分比</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reading_progress:</span> <span class="comment"># 开启阅读进度条</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#bfa&quot;</span></span><br><span class="line">  <span class="attr">height:</span> <span class="string">3px</span></span><br><span class="line"></span><br><span class="line"><span class="attr">github_banner:</span>  <span class="comment"># 开启页面右上角的GitHub三角形图标</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/yuzec</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br><span class="line"></span><br><span class="line"><span class="attr">busuanzi_count:</span> <span class="comment"># 开启访客数记录</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br></pre></td></tr></table></figure>
 <h4 id="开启标签-分类功能"><a href="#开启标签-分类功能" class="headerlink" title="开启标签/分类功能"></a>开启标签/分类功能</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>修改<code>my-blog/source/tags/index.md</code></p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line"><span class="section">type: tags</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
@@ -307,13 +322,31 @@
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Zecong Yu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yuzec.github.io/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="Hexo+NexT+GitHub Pages搭建个人博客">https://yuzec.github.io/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages搭建个人博客/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-              <a href="/tags/NexT/" rel="tag"># NexT</a>
-              <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
-              <a href="/tags/Blog/" rel="tag"># Blog</a>
+              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/NexT/" rel="tag"><i class="fa fa-tag"></i> NexT</a>
+              <a href="/tags/GitHub-Pages/" rel="tag"><i class="fa fa-tag"></i> GitHub Pages</a>
+              <a href="/tags/Blog/" rel="tag"><i class="fa fa-tag"></i> Blog</a>
           </div>
 
         
@@ -322,7 +355,7 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/11/13/hello-world/" rel="prev" title="Hello World">
+    <a href="/uncategorized/2022-11-13-hello-world/" rel="prev" title="Hello World">
       <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
       <div class="post-nav-item"></div>
@@ -404,6 +437,12 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
@@ -419,6 +458,9 @@
       <span class="links-of-author-item">
         <a href="mailto:yuzec@163.com" title="E-Mail → mailto:yuzec@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -526,6 +568,31 @@
 
 
   
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
 
 
 
