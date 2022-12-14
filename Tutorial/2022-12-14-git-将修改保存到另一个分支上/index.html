@@ -22,18 +22,20 @@
     var CONFIG = {"hostname":"yuzec.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Yuzec的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yuzec&#39;s blog">
-<meta property="og:url" content="https://yuzec.github.io/tags/NexT/index.html">
+  <meta name="description" content="今天将master分支上的代码拉下来修改，改完了提交的时候才发现要提交到feature分支上，但是此时再使用git checkout feature命令切换分支会报错，git会告诉你当前分支下有修改没有被commit，要先commit后才能切换分支。然而我们并不想将修改commit到当前分支，更何况commit后再切换分支，得到的是之前的feature分支，并没有将我们的修改也切过来。那要怎么样才">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git-将修改保存到另一个分支上">
+<meta property="og:url" content="https://yuzec.github.io/Tutorial/2022-12-14-git-%E5%B0%86%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8A/index.html">
 <meta property="og:site_name" content="Yuzec&#39;s blog">
-<meta property="og:description" content="Yuzec的个人博客">
+<meta property="og:description" content="今天将master分支上的代码拉下来修改，改完了提交的时候才发现要提交到feature分支上，但是此时再使用git checkout feature命令切换分支会报错，git会告诉你当前分支下有修改没有被commit，要先commit后才能切换分支。然而我们并不想将修改commit到当前分支，更何况commit后再切换分支，得到的是之前的feature分支，并没有将我们的修改也切过来。那要怎么样才">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-14T01:31:48.000Z">
+<meta property="article:modified_time" content="2022-12-14T02:15:47.190Z">
 <meta property="article:author" content="Zecong Yu">
-<meta property="article:tag" content="前端,Python,Ubuntu">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yuzec.github.io/tags/NexT/">
+<link rel="canonical" href="https://yuzec.github.io/Tutorial/2022-12-14-git-%E5%B0%86%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8A/">
 
 
 <script id="page-configurations">
@@ -41,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: NexT | Yuzec's blog</title>
+  <title>git-将修改保存到另一个分支上 | Yuzec's blog</title>
   
 
 
@@ -195,51 +197,145 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">NexT
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yuzec.github.io/Tutorial/2022-12-14-git-%E5%B0%86%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Zecong Yu">
+      <meta itemprop="description" content="Yuzec的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yuzec's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git-将修改保存到另一个分支上
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-14 09:31:48 / 修改时间：10:15:47" itemprop="dateCreated datePublished" datetime="2022-12-14T09:31:48+08:00">2022-12-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tutorial/" itemprop="url" rel="index"><span itemprop="name">Tutorial</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>521</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>今天将master分支上的代码拉下来修改，改完了提交的时候才发现要提交到feature分支上，但是此时再使用<code>git checkout feature</code>命令切换分支会报错，git会告诉你当前分支下有修改没有被commit，要先commit后才能切换分支。然而我们并不想将修改commit到当前分支，更何况commit后再切换分支，得到的是之前的feature分支，并没有将我们的修改也切过来。那要怎么样才能将master分支上的修改保存到feature分支上呢？总不能一行一行代码粘过来吧，经过一番搜索发现，其实git早已经帮我们想到了：</p>
+<span id="more"></span>
+
+<ol>
+<li><p>在当前分支上（不要将修改commit）使用以下命令将修改缓存起来：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash</span><br></pre></td></tr></table></figure>
+<p>此时，当前分支下的工作区和暂存区就干净了，可以愉快地切换分支了。</p>
+<p>附：如果已经不小心commit了，需要使用以下命令将commit操作撤销：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD^</span><br></pre></td></tr></table></figure>
+<p>（不要漏掉最后的<code>^</code>哦！）</p>
+</li>
+<li><p>切换分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout feature</span><br></pre></td></tr></table></figure></li>
+<li><p>将之前缓存的修改释放出来：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+<p>此时，修改后的代码就已经出现在feature分支上了。最后再使用<code>git add</code>和<code>git commit</code>将修改后的代码进行提交操作就可以了。</p>
+</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-11-13T19:30:54+08:00"
-              content="2022-11-13">
-          11-13
-        </time>
-      </div>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Zecong Yu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yuzec.github.io/Tutorial/2022-12-14-git-%E5%B0%86%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8A/" title="git-将修改保存到另一个分支上">https://yuzec.github.io/Tutorial/2022-12-14-git-将修改保存到另一个分支上/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-            <span itemprop="name">Hexo+NexT+GitHub Pages搭建个人博客</span>
-          </a>
-      </div>
 
-    </header>
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="Hexo+NexT+GitHub Pages搭建个人博客">
+      <i class="fa fa-chevron-left"></i> Hexo+NexT+GitHub Pages搭建个人博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
