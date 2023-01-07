@@ -22,20 +22,21 @@
     var CONFIG = {"hostname":"yuzec.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="有些时候我们不想使用vant原生的错误提示，而是想使用Dialog或Toast的形式来显示表单校验的错误提示时，可以使用以下方案：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://yuzec.github.io/uncategorized/2022-11-13-hello-world/index.html">
+<meta property="og:title" content="vant-使用Dialog或Toast显示表单校验的错误提示">
+<meta property="og:url" content="https://yuzec.github.io/vue/2023-01-07-vant-%E4%BD%BF%E7%94%A8Dialog%E6%88%96Toast%E6%98%BE%E7%A4%BA%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C%E7%9A%84%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA/index.html">
 <meta property="og:site_name" content="Yuzec&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="有些时候我们不想使用vant原生的错误提示，而是想使用Dialog或Toast的形式来显示表单校验的错误提示时，可以使用以下方案：">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-13T04:01:11.250Z">
-<meta property="article:modified_time" content="2022-11-13T07:58:59.259Z">
+<meta property="article:published_time" content="2023-01-07T01:11:04.000Z">
+<meta property="article:modified_time" content="2023-01-07T03:22:57.847Z">
 <meta property="article:author" content="Zecong Yu">
-<meta property="article:tag" content="前端,Python,Ubuntu">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="vant">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://yuzec.github.io/uncategorized/2022-11-13-hello-world/">
+<link rel="canonical" href="https://yuzec.github.io/vue/2023-01-07-vant-%E4%BD%BF%E7%94%A8Dialog%E6%88%96Toast%E6%98%BE%E7%A4%BA%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C%E7%9A%84%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA/">
 
 
 <script id="page-configurations">
@@ -48,7 +49,7 @@
   };
 </script>
 
-  <title>Hello World | Yuzec's blog</title>
+  <title>vant-使用Dialog或Toast显示表单校验的错误提示 | Yuzec's blog</title>
   
 
 
@@ -204,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yuzec.github.io/uncategorized/2022-11-13-hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://yuzec.github.io/vue/2023-01-07-vant-%E4%BD%BF%E7%94%A8Dialog%E6%88%96Toast%E6%98%BE%E7%A4%BA%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C%E7%9A%84%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -217,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          vant-使用Dialog或Toast显示表单校验的错误提示
         </h1>
 
         <div class="post-meta">
@@ -228,7 +229,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-11-13 12:01:11 / 修改时间：15:58:59" itemprop="dateCreated datePublished" datetime="2022-11-13T12:01:11+08:00">2022-11-13</time>
+              <time title="创建时间：2023-01-07 09:11:04 / 修改时间：11:22:57" itemprop="dateCreated datePublished" datetime="2023-01-07T09:11:04+08:00">2023-01-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue/" itemprop="url" rel="index"><span itemprop="name">vue</span></a>
+                </span>
             </span>
 
           
@@ -244,14 +254,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -263,21 +273,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <p>有些时候我们不想使用vant原生的错误提示，而是想使用<code>Dialog</code>或<code>Toast</code>的形式来显示表单校验的错误提示时，可以使用以下方案：</p>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">van-form</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">submit</span>=<span class="string">&quot;onSubmit&quot;</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">failed</span>=<span class="string">&quot;onFailed&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">validate-trigger</span>=<span class="string">&quot;onSubmit&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:validate-first</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:show-error-message</span>=<span class="string">&quot;false&quot;</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">van-cell-group</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">van-field</span></span></span><br><span class="line"><span class="tag">      <span class="attr">v-model</span>=<span class="string">&quot;loginForm.username&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">type</span>=<span class="string">&quot;tel&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">name</span>=<span class="string">&quot;username&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">label</span>=<span class="string">&quot;手机号&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">placeholder</span>=<span class="string">&quot;请输入手机号&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:rules</span>=<span class="string">&quot;rules.username&quot;</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">van-field</span></span></span><br><span class="line"><span class="tag">      <span class="attr">v-model</span>=<span class="string">&quot;loginForm.password&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">type</span>=<span class="string">&quot;password&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">name</span>=<span class="string">&quot;password&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">label</span>=<span class="string">&quot;密码&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">placeholder</span>=<span class="string">&quot;请输入密码&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:rules</span>=<span class="string">&quot;rules.password&quot;</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">van-cell-group</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">van-button</span> <span class="attr">round</span> <span class="attr">block</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span> <span class="attr">native-type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">van-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">van-form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>参数说明：</p>
+<ul>
+<li><code>@submit</code>：该事件为提交表单且验证通过后触发，回调参数<code>values</code>为表单数据，使用该事件配合axios将校验通过的表单数据传递到后端。</li>
+<li><code>@failed</code>：该事件为提交表单且验证不通过后触发，回调参数<code>errorInfo</code>中包含错误数据和错误提示信息，使用该事件配合<code>Dialog</code>或<code>Toast</code>将错误提示信息显示出来。</li>
+<li><code>validate-trigger</code>：该参数为表单校验触发时机，<code>onSubmit</code>表示仅在提交表单时触发校验。</li>
+<li><code>validate-first</code>：该参数为是否在某一项校验不通过时停止校验，该值为<code>false</code>时只会显示校验不通过的最后一项的错误提示。</li>
+<li><code>show-error-message</code>：该参数为是否在校验不通过时在输入框下方展示错误提示，将该值设为<code>true</code>关闭vant原生的错误提示。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; validTel, validPassword &#125; <span class="keyword">from</span> <span class="string">&#x27;@/utils/validate&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">loginForm</span>: &#123;</span><br><span class="line">        <span class="attr">username</span>: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">        <span class="attr">password</span>: <span class="string">&#x27;&#x27;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">rules</span>: &#123;</span><br><span class="line">        <span class="attr">username</span>: [</span><br><span class="line">          &#123; <span class="attr">required</span>: <span class="literal">true</span>, <span class="attr">message</span>: <span class="string">&#x27;请输入手机号！&#x27;</span> &#125;,</span><br><span class="line">          &#123; <span class="attr">validator</span>: validTel, <span class="attr">message</span>: <span class="string">&#x27;请输入正确格式的手机号！&#x27;</span> &#125;</span><br><span class="line">        ],</span><br><span class="line">        <span class="attr">password</span>: [</span><br><span class="line">          &#123; <span class="attr">required</span>: <span class="literal">true</span>, <span class="attr">message</span>: <span class="string">&#x27;请输入登录密码！&#x27;</span>&#125;,</span><br><span class="line">          &#123; <span class="attr">validator</span>: validPassword, <span class="attr">message</span>: <span class="string">&#x27;请输入正确格式的登录密码！&#x27;</span> &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="title function_">onSubmit</span>(<span class="params">values</span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;submit&#x27;</span>, values)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">onFailed</span>(<span class="params">errorInfo</span>) &#123;</span><br><span class="line">      <span class="title class_">Dialog</span>.<span class="title function_">alert</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&#x27;温馨提示&#x27;</span>,</span><br><span class="line">        <span class="attr">message</span>: errorInfo.<span class="property">errors</span>[<span class="number">0</span>].<span class="property">message</span></span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ol>
+<li>当提交表单且验证不通过时，<code>@failed</code>事件将会被触发，我们可以使用<code>Dialog</code>或<code>Toast</code>的形式将回调参数中的错误提示信息显示出来。</li>
+<li>这里将一些常用的校验规则封装到<code>src/utils/validate.js</code>中，方便后续使用，例如：</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 校验手机号</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">string</span>&#125; <span class="variable">tel</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> &#123;<span class="type">Boolean</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">validTel</span>(<span class="params">tel</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> reg = <span class="regexp">/^((13|15|16|17|18|19)[0-9]|147)\d&#123;8&#125;$/</span></span><br><span class="line">  <span class="keyword">return</span> reg.<span class="title function_">test</span>(tel)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -293,7 +308,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://yuzec.github.io/uncategorized/2022-11-13-hello-world/" title="Hello World">https://yuzec.github.io/uncategorized/2022-11-13-hello-world/</a>
+    <a href="https://yuzec.github.io/vue/2023-01-07-vant-%E4%BD%BF%E7%94%A8Dialog%E6%88%96Toast%E6%98%BE%E7%A4%BA%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C%E7%9A%84%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA/" title="vant-使用Dialog或Toast显示表单校验的错误提示">https://yuzec.github.io/vue/2023-01-07-vant-使用Dialog或Toast显示表单校验的错误提示/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -303,16 +318,24 @@
 
 
       <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
+              <a href="/tags/vant/" rel="tag"><i class="fa fa-tag"></i> vant</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/Tutorial/2022-11-13-Hexo-NexT-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="next" title="Hexo+NexT+GitHub Pages搭建个人博客">
-      Hexo+NexT+GitHub Pages搭建个人博客 <i class="fa fa-chevron-right"></i>
+    <a href="/Tutorial/2022-12-14-git-%E5%B0%86%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8A/" rel="prev" title="git-将修改保存到另一个分支上">
+      <i class="fa fa-chevron-left"></i> git-将修改保存到另一个分支上
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/vue/2023-01-07-vant-%E5%8F%91%E9%80%81%E7%9F%AD%E4%BF%A1%E9%AA%8C%E8%AF%81%E7%A0%81/" rel="next" title="vant-发送短信验证码">
+      vant-发送短信验证码 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -372,7 +395,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
